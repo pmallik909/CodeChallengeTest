@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="10722" started-at="2018-08-28T21:33:12Z" finished-at="2018-08-28T21:33:23Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="10722" started-at="2018-08-28T21:33:12Z" finished-at="2018-08-28T21:33:23Z">
+      <class name="DemoTest">
+        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:DemoTest@643b1d11]" name="browserLaunch" is-config="true" duration-ms="6605" started-at="2018-08-29T03:03:12Z" finished-at="2018-08-29T03:03:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:DemoTest@643b1d11]" name="loginTest" duration-ms="4101" started-at="2018-08-29T03:03:19Z" finished-at="2018-08-29T03:03:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- DemoTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
