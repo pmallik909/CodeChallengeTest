@@ -3,14 +3,15 @@ package com.dropbox.test.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.dropbox.test.base.BaseClass;
+import com.dropbox.test.utils.TestUtils;
 
 public class LandingPage extends BaseClass{
 	
-	@FindBy(linkText = "Sign in")
+	@FindBy(xpath = "//a[contains(text(),'Sign in')]")
 	WebElement signInLink;
 	
 	@FindBy(name = "login_email")
@@ -22,19 +23,31 @@ public class LandingPage extends BaseClass{
 	@FindBy(xpath = "//div[@class='clearfix']/button")
 	WebElement signInButton;
 	
+	
+	
 	public LandingPage() {
 		PageFactory.initElements(driver, this);
 	}
 
-	@Test
-	@Parameters({"email","password"})
+	//Login To the Application
 	public LandingPage login(String email, String password) {
 		
-		signInLink.click();
+		
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.elementToBeClickable(loginEmailInputField));
 		loginEmailInputField.sendKeys(email);
 		loginPasswordInputField.sendKeys(password);
 		signInButton.click();
 		
 		return new LandingPage();
 	}
+	
+	public String getPageTitle(){
+		
+		return driver.getTitle();
+		
+		
+		
+	}
+	
 }
