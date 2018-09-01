@@ -1,21 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10722" started-at="2018-08-28T21:33:12Z" finished-at="2018-08-28T21:33:23Z">
+  <suite name="Suite" duration-ms="110017" started-at="2018-09-01T20:51:56Z" finished-at="2018-09-01T20:53:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10722" started-at="2018-08-28T21:33:12Z" finished-at="2018-08-28T21:33:23Z">
-      <class name="DemoTest">
-        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:DemoTest@643b1d11]" name="browserLaunch" is-config="true" duration-ms="6605" started-at="2018-08-29T03:03:12Z" finished-at="2018-08-29T03:03:19Z">
+    <test name="Drop box Login Test" duration-ms="110017" started-at="2018-09-01T20:51:56Z" finished-at="2018-09-01T20:53:46Z">
+      <class name="com.test.qa.dropbox.testCases.TestCases">
+        <test-method status="PASS" signature="browserLaunch()[pri:0, instance:com.test.qa.dropbox.testCases.TestCases@4520ebad]" name="browserLaunch" is-config="true" duration-ms="20507" started-at="2018-09-02T02:21:56Z" description="Initialize The Browser Launch Operation" finished-at="2018-09-02T02:22:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLaunch -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:DemoTest@643b1d11]" name="loginTest" duration-ms="4101" started-at="2018-08-29T03:03:19Z" finished-at="2018-08-29T03:03:23Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.test.qa.dropbox.testCases.TestCases@4520ebad]" name="login" is-config="true" duration-ms="665" started-at="2018-09-02T02:22:16Z" description="Perfomm Login Operation Before Each Test" finished-at="2018-09-02T02:22:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[taccone09@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test09test]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-      </class> <!-- DemoTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="loginValidation()[pri:0, instance:com.test.qa.dropbox.testCases.TestCases@4520ebad]" name="loginValidation" duration-ms="4263" started-at="2018-09-02T02:22:17Z" description="Home Page Validation" finished-at="2018-09-02T02:22:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginValidation -->
+        <test-method status="PASS" signature="logoutTest()[pri:0, instance:com.test.qa.dropbox.testCases.TestCases@4520ebad]" name="logoutTest" is-config="true" duration-ms="3210" started-at="2018-09-02T02:22:21Z" description="LogOut From the Test Case" finished-at="2018-09-02T02:22:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.test.qa.dropbox.testCases.TestCases@4520ebad]" name="login" is-config="true" duration-ms="700" started-at="2018-09-02T02:22:25Z" description="Perfomm Login Operation Before Each Test" finished-at="2018-09-02T02:22:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[taccone09@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test09test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="fileUploadTest()[pri:0, instance:com.test.qa.dropbox.testCases.TestCases@4520ebad]" name="fileUploadTest" duration-ms="25061" started-at="2018-09-02T02:22:25Z" description="Upload a New File" finished-at="2018-09-02T02:22:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileUploadTest -->
+        <test-method status="PASS" signature="logoutTest()[pri:0, instance:com.test.qa.dropbox.testCases.TestCases@4520ebad]" name="logoutTest" is-config="true" duration-ms="4858" started-at="2018-09-02T02:22:50Z" description="LogOut From the Test Case" finished-at="2018-09-02T02:22:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.test.qa.dropbox.testCases.TestCases@4520ebad]" name="login" is-config="true" duration-ms="970" started-at="2018-09-02T02:22:55Z" description="Perfomm Login Operation Before Each Test" finished-at="2018-09-02T02:22:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[taccone09@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test09test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="searchUploadedFileTestCase()[pri:0, instance:com.test.qa.dropbox.testCases.TestCases@4520ebad]" name="searchUploadedFileTestCase" duration-ms="8180" started-at="2018-09-02T02:22:56Z" description="Search For the Uploaded File" finished-at="2018-09-02T02:23:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchUploadedFileTestCase -->
+        <test-method status="PASS" signature="logoutTest()[pri:0, instance:com.test.qa.dropbox.testCases.TestCases@4520ebad]" name="logoutTest" is-config="true" duration-ms="8735" started-at="2018-09-02T02:23:04Z" description="LogOut From the Test Case" finished-at="2018-09-02T02:23:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.test.qa.dropbox.testCases.TestCases@4520ebad]" name="login" is-config="true" duration-ms="1249" started-at="2018-09-02T02:23:13Z" description="Perfomm Login Operation Before Each Test" finished-at="2018-09-02T02:23:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[taccone09@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test09test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="deleteUploadedFile()[pri:0, instance:com.test.qa.dropbox.testCases.TestCases@4520ebad]" name="deleteUploadedFile" duration-ms="6328" started-at="2018-09-02T02:23:14Z" description="Delete Uplaoded File" finished-at="2018-09-02T02:23:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUploadedFile -->
+        <test-method status="PASS" signature="logoutTest()[pri:0, instance:com.test.qa.dropbox.testCases.TestCases@4520ebad]" name="logoutTest" is-config="true" duration-ms="7448" started-at="2018-09-02T02:23:21Z" description="LogOut From the Test Case" finished-at="2018-09-02T02:23:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.test.qa.dropbox.testCases.TestCases@4520ebad]" name="login" is-config="true" duration-ms="1391" started-at="2018-09-02T02:23:28Z" description="Perfomm Login Operation Before Each Test" finished-at="2018-09-02T02:23:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[taccone09@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test09test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="createFolderTest()[pri:0, instance:com.test.qa.dropbox.testCases.TestCases@4520ebad]" name="createFolderTest" duration-ms="9466" started-at="2018-09-02T02:23:29Z" description="Create a New Folder" finished-at="2018-09-02T02:23:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createFolderTest -->
+        <test-method status="PASS" signature="logoutTest()[pri:0, instance:com.test.qa.dropbox.testCases.TestCases@4520ebad]" name="logoutTest" is-config="true" duration-ms="5630" started-at="2018-09-02T02:23:39Z" description="LogOut From the Test Case" finished-at="2018-09-02T02:23:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method status="PASS" signature="closeTest()[pri:0, instance:com.test.qa.dropbox.testCases.TestCases@4520ebad]" name="closeTest" is-config="true" duration-ms="1329" started-at="2018-09-02T02:23:45Z" description="Close The Browser" finished-at="2018-09-02T02:23:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTest -->
+      </class> <!-- com.test.qa.dropbox.testCases.TestCases -->
+    </test> <!-- Drop box Login Test -->
+  </suite> <!-- Suite -->
 </testng-results>

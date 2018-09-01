@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Suite]">
+  <parameter name="password" value="test09test"/>
+  <parameter name="email" value="taccone09@gmail.com"/>
+  <test name="Drop box Login Test(failed)">
+    <parameter name="password" value="test09test"/>
+    <parameter name="email" value="taccone09@gmail.com"/>
     <classes>
-      <class name="DemoTest">
+      <class name="com.test.qa.dropbox.testCases.TestCases">
         <methods>
-          <include name="loginTest"/>
           <include name="browserLaunch"/>
+          <include name="fileUploadTest"/>
+          <include name="logoutTest"/>
+          <include name="createFolderTest"/>
+          <include name="searchUploadedFileTestCase"/>
+          <include name="deleteUploadedFile"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- DemoTest -->
+      </class> <!-- com.test.qa.dropbox.testCases.TestCases -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Drop box Login Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

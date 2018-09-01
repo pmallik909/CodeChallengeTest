@@ -10,25 +10,27 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import com.dropbox.test.utils.TestUtils;
+
 public class BaseClass {
 	
 	public static WebDriver driver;
 	public static Properties properties;
 	
+	//Base Class Constructor for loading config.properties file
 	public BaseClass(){
 		try {
 			properties = new Properties();
 			FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/dropbox/test/config/config.properties");
 			properties.load(fis);
 		}catch (FileNotFoundException e) {
-			// TODO: handle exception
 			e.printStackTrace();
 		}catch (IOException e) {
-			// TODO: handle exception
 			e.printStackTrace();
 		}
 	}
 	
+	//Initializing Browser Launch	
 	public void initializeTest() {
 		
 		String browserName = properties.getProperty("browser");
@@ -45,8 +47,16 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get(properties.getProperty("url"));
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		TestUtils.implicityWait();
 		
+		
+	}
+	
+	//Closing the Browser after Test execution
+	public void closeBrowser(){
+		
+		TestUtils.implicityWait();
+		driver.quit();
 	}
 
 }
